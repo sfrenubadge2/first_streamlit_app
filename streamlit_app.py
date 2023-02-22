@@ -48,7 +48,6 @@ import pandas
 fruit_choice2 = streamlit.text_input('What fruit would you like information about?','jackfruit')
 streamlit.write('The user entered ', fruit_choice2)
 
-my_cur = my_cnx.cursor()
 my_cur.execute("Insert into fruit_load_list values (" + fruit_choice2 + ")")
 streamlit.text("The fruit " + fruit_choice2 + " has been added to the fruit load list!")
 
