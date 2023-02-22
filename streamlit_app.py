@@ -45,6 +45,6 @@ streamlit.dataframe(my_data_rows)
 
 import pandas
 
-fruit_choice2 = streamlit.text_input('What fruit would you like information about?','jackfruit')
+fruit_choice2 = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('The user entered ', fruit_choice2)
 streamlit.text(" the user entered choice of fruit " + fruit_choice2 +" has been added to the table")
