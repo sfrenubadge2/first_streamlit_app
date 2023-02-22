@@ -72,8 +72,6 @@ if streamlit.button('Get fruit load list'):
  
 #import pandas
 
-# don't run anything while we fix the code below
-streamlit.stop()
 
 
 #Allow the end user to add a fruit to the list
@@ -87,6 +85,9 @@ if streamlit.button('Add a Fruit to the list'):
 back_from_function = insert_row_snowflake(add_my_fruit)
  
 streamlit.write(back_from_function)
+
+# don't run anything while we fix the code below
+streamlit.stop()
 
 #this will not work corrctly now but just go withit for now
 
